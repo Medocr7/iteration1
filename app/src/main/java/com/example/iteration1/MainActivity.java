@@ -36,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
     });
     // This button will pop up a view of the calender of the month ***TRACKS BASED ON REAL TIME***
     Button CalenderView = findViewById(R.id.CalenderView);
-    CalenderView.setOnClickListener(new Intent(MainActivity.this, ViewCalender.class));
+    CalenderView.setOnClickListener(new OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(MainActivity.this, ViewCalender.class));
+        }
+    } );
 
     // Exits the App and pops with an error code of 0.
     Button ExitApp =findViewById(R.id.ExitApp);

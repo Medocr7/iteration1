@@ -19,6 +19,12 @@
         <activity android:name=".AgendaViewing">
 
         </activity>
+        <activity android:name=".AgendaAdd">
+
+        </activity>
+        <activity android:name=".ViewCalender">
+
+        </activity>
     </application>
 
 </manifest>
